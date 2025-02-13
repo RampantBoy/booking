@@ -1,6 +1,5 @@
 let flag = false;
- const profix = "https://www.hnviiv.com.cn:8443/bookkeeping"
-//const profix = "http://127.0.0.1:8080/bookkeeping"
+const profix = "http://127.0.0.1:8080/bookkeeping"
 
 /**
  * 获取header
@@ -48,7 +47,7 @@ function notLogin() {
 /**
  * 网络请求
  */
-function request(url, data = {}, header = {}, method = "POST", config = {}) {
+function 请求(url, data = {}, header = {}, method = "POST", config = {}) {
 
   // 如果token有值则带上
   let token = wx.getStorageSync("token");
